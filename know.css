@@ -1,0 +1,44 @@
+/* General Style */
+body {
+    background-color: #000000;
+
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+       to { opacity: 7; }
+       }
+
+.us{
+   
+    color: rgb(255, 255, 255);
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+    font-family:"Moon Dance", serif;
+    margin: 0%;
+    padding: 40px;
+}
+
+ /* paragraph */
+
+.paragraph{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation:fadeIn 3s ease-in-out;
+    color:  #333;
+}
+
+.paragraph-b0x{
+
+    background: rgb(255, 255, 255);
+    padding: 100px;
+    border-radius: 39px;
+    box-shadow: 0p 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.paragraph-b0x:hover{
+    transform: scale(1.05);
+}

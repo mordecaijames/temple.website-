@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: "Moon Dance", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.9em;
+    color: #114b4b;
+}
+
+/* Header & Navigation */
+header {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    align-items: center;
+    padding: 35px
+}
+
+.logo {
+    font-family: "Moon Dance", serif;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+nav ul {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+nav ul li {
+    margin: 50px;
+    display: inline;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h1{
+    font-size: 200%;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Hero Section */
+.hero {
+    background: url('photo/logo.jpg') no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.btn {
+    display: inline-block;
+    background:  #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #d43f00;
+}
+
+.section{
+
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+}
+
+.james{
+ background-color: #333;
+ color: #ccc;
+ padding: 10px 20px;
+ font:"Moon Dance", serif;
+ border-radius: 20px;
+ text-decoration: none;
+}
+
+.james:hover{
+    background: #d43f00;   
+}
+
+/* Services */
+.services{
+
+    padding-top: 25px;
+
+}
+
+.services-container {
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation:fadeIn 3s ease-in-out;
+   
+}
+
+.service-box {
+
+    background: white;
+    padding: 20px;
+    border-radius: 39px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.service-box:hover {
+
+    transform: scale(1.05);
+
+}
+
+.see-more{
+
+text-align: center;
+padding-top: 60px;
+padding-bottom: 60px;
+
+}
+
+.tabara{
+
+    background-color: #333;
+    color: #ccc;
+    padding: 10px 20px;
+    font:"Moon Dance", serif;
+    border-radius: 20px;
+    text-decoration: none;
+   
+   }
+   
+   .tabara:hover{
+
+       background: #d43f00;
+
+    }
+
+/* Contact Form */
+
+.mordecai{
+
+padding-top: 20px;
+padding-bottom: 30px;
+background-color: #333;
+margin-right: 100px;
+margin-left: 100px;
+border-radius: 70px;
+
+}
+
+form {
+
+    max-width: 400px;
+    margin: auto;
+
+}
+
+input, textarea {
+
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #5b5858;
+    border-radius: 20px;
+
+}
+
+button {
+
+    background: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+
+}
+
+/* Footer */
+footer {
+
+    background: rgb(255, 255, 255);
+    color: #333;
+    padding: 20px;
+
+}
+
+.social-icons a {
+
+    color: #5b5858; 
+    margin: 0 10px;
+
+}
+
+.top{
+
+padding: 20px 30px;
+
+}
+
+.btu {
+
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-style:"Moon Dance", serif;
+
+}
+
+.btu:hover {
+
+    background: #d43f00;
+    transform: scale(1.05);
+
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #333;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+}
